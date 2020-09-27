@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>ST-Function</title>
+    <link rel = "icon" href ="title logo.jpg" 
+        type = "image/x-icon"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="j.css">
+
+    <!-- bootstrap link only -->
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- bootstrap link end -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic,Libre+Caslon+Display&display=swap"
+        rel="stylesheet">
+
+
+    <!-- js -->
+
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
+    <script type='text/javascript' src='js/dynamicpage.js'></script>
+</head>
+
+<body>
+    <!--================================ top navigation bar start ================================-->
+    <!--================================ top navigation bar start ================================-->
+
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">ST WebDesign</label>
+        <ul class="topul" style="list-style: none;">
+            <li class="topli">String Handing Function</li>
+        </ul>
+    </nav>
+    <!--================================ top navigation bar end ================================-->
+    <!--================================ top navigation bar end ================================-->
+
+
+    <!--========================== side navigation bar start ==============================-->
+    <!--========================== side navigation bar start ==============================-->
+    <div class="sidebar" style="list-style: none;">
+        <ul class="sideul" id="sideul1">
+            <li class="sideli1 active"><a class="sidea1" href="#strlen">Strlen()</a></li>
+            <li class="sideli1"><a class="sidea1" href="#Substr">Substr()</a></li>
+            <li class="sideli1"><a class="sidea1" href="#strncm">strncm()</a></li>
+            <li class="sideli1"><a class="sidea1" href="#Strpos">Strpos()</a></li>
+            <li class="sideli1"><a class="sidea1" href="#Strrev">Strrev()</a></li>
+            <li class="sideli1"><a class="sidea1" href="#Strstr">Strstr()</a></li>
+            <li class="sideli1"><a class="sidea1" href="#Strtolower">Strtolower()</a></li>
+            <li class="sideli1"><a class="sidea1" href="#Strtoupper">Strtoupper()</a></li>
+            <li class="sideli1"><a class="sidea1" href="#Ucfirst">Ucfirst()</a></li>
+            <li class="sideli1"><a class="sidea1" href="#Trim">Trim()</a></li>
+        </ul>
+    </div>
+    <!--============================ side navigation bar end ==============================-->
+    <!--============================ side navigation bar end ==============================-->
+
+    <!-- string function start -->
+
+    <div class="mbox">
+        <center>
+            <h1>String Function</h1>
+        </center>
+
+    </div>
+    <section>
+
+        <!-- =======================================strlen========================================== -->
+        <!-- =======================================strlen========================================== -->
+        <!-- =======================================strlen========================================== -->
+
+        <div class="page" id="strlen">
+            <h1>PHP strlen() Function</h1>
+            <div class="defination">
+                <h2>Definition and Usage</h2><br>
+                <p>The strlen() function returns the length of a string.</p>
+                <hr>
+            </div>
+            <div class="syntax">
+                <h2>Syntax</h2>
+                <div class="syntaxbox">
+                    <p>strlen(<i>string</i>)</p>
+                </div>
+            </div><br>
+            <div class="parameter">
+                <h2>Pramater Values</h2>
+                <table class="table   table-responsive" style="border:1px solid black">
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Desciption</th>
+                    </tr>
+                    <tr>
+                        <td>string</td>
+                        <td>Required. Specifies the string to check</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="technicaldetail">
+                <h2>Technical Details</h2>
+                <table class="table    table-responsive" style="border:1px solid black">
+                    <tr>
+                        <th>Return Value:</th>
+                        <td>Returns the length of a string (in bytes) on success, and 0 if the string is empty</td>
+                    </tr>
+                    <tr>
+                        <th>PHP Version:</th>
+                        <td>4+</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="example">
+                <h2>Example</h2>
+                <p>return the length of the string "Hello World":</p>
+                <div class="examplebox" id="strlenexamplebox">
+                    <p><span>
+                            < </span>?php</p>
+                    <p>echo strlen("Hello World");</p>
+                    <p>?></p>
+                </div><br>
+                <div class="copy">
+                    <button   onclick="copyToClipboard('#strlenexamplebox')  ,myFunction()">Copy</button><br>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ========================================substr========================================== -->
+        <!-- ========================================substr========================================== -->
+        <!-- ========================================substr========================================== -->
+
+        <div class="page" id="Substr" style="display:none">
+            <h1>PHP substr() Function</h1>
+            <div class="defination">
+                <h2>Definition and Usage</h2><br>
+                <p>The substr_replace() function replaces a part of a string with another string.
+
+                </p>
+                <p><b>Note:</b> If the start parameter is a negative number and length is less than or equal to start,
+                    length becomes 0.
+
+                </p>
+                <p><b>Note:</b> This function is binary-safe.</p>
+                <hr>
+            </div>
+            <div class="syntax">
+                <h2>Syntax</h2>
+                <div class="syntaxbox">
+                    <p>strstr_replace(<i>string,replacement,start,length</i>)</p>
+                </div>
+            </div><br>
+            <div class="parameter">
+                <h2>Pramater Values</h2>
+                <table class="table   table-responsive" style="border:1px solid black">
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Desciption</th>
+                    </tr>
+                    <tr>
+                        <td>string</td>
+                        <td>Required. Specifies the string to insert
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>start</td>
+                        <td>Required. Specifies where to start replacing in the string
+                            <ul>
+                                <li>A positive number - Start replacing at the specified position in the string
+                                </li>
+                                <li>Negative number - Start replacing at the specified position from the end of the
+                                    string
+                                </li>
+                                <li>0 - Start replacing at the first character in the string
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>length</td>
+                        <td>Optional. Specifies how many characters should be replaced. Default is the same length as
+                            the string.
+
+                            <ul>
+                                <li>A positive number - The length of string to be replace
+                                </li>
+                                <li>A negative number - How many characters should be left at end of string after
+                                    replacing
+
+                                </li>
+                                <li>0 - Insert instead of replace
+
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="technicaldetail">
+                <h2>Technical Details</h2>
+                <table class="table    table-responsive" style="border:1px solid black">
+                    <tr>
+                        <th>Return Value:</th>
+                        <td>Returns the replaced string. If the string is an array then the array is returned
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>PHP Version:</th>
+                        <td>4+</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="example">
+                <h2>Example</h2>
+                <p>Start replacing at the 5th position from the end of the string (replace "world" with "earth"):
+
+                </p>
+                <div class="examplebox" id="substr_rexamplebox">
+                    <p><span>
+                            < </span>?php</p>
+                    <p> echo substr_replace("Hello world","earth",6); // Hello earth</p>
+                    <p>?></p>
+                </div><br>
+                <div class="copy">
+                    <button  
+                        onclick="copyToClipboard('#substr_rexamplebox')  ,myFunction()">Copy</button><br>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- =======================================strncm========================================== -->
+        <!-- =======================================strncm========================================== -->
+        <!-- =======================================strncm========================================== -->
+
+        <div class="page" id="strncm" style="display:none">
+            <h1>PHP strncm() Function</h1>
+            <div class="defination">
+                <h2>Definition and Usage</h2><br>
+                <p>The strncmp() function compares two strings</p>
+                <p><b>Note:</b> The strncmp() is binary-safe and case-sensitive.</p>
+                <p><b>Tip:</b> This function is similar to the strcmp() function, except that strcmp() does not have the
+                    length parameter</p>
+                <hr>
+            </div>
+            <div class="syntax">
+                <h2>Syntax</h2>
+                <div class="syntaxbox">
+                    <p>strncmp(<i>string1,string2,length</i>)</p>
+                </div>
+            </div><br>
+            <div class="parameter">
+                <h2>Pramater Values</h2>
+                <table class="table   table-responsive" style="border:1px solid black">
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Desciption</th>
+                    </tr>
+                    <tr>
+                        <td>string1</td>
+                        <td>Required. Specifies the first string to compare</td>
+                    </tr>
+                    <tr>
+                        <td>string2</td>
+                        <td>Required. Specifies the second string to compare</td>
+                    </tr>
+                    <tr>
+                        <td>length</td>
+                        <td>Required. Specify the number of characters from each string to be used in the comparison
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="technicaldetail">
+                <h2>Technical Details</h2>
+                <table class="table    table-responsive" style="border:1px solid black">
+                    <tr>
+                        <th>Return Value:</th>
+                        <td>
+                            <p>This function returns:</p>
+                            <ul>
+                                <li> 0 - if the two strings are equal</li>
+                                <li>
+                                    <0 - if string1 is less than string2 </li>
+                                <li>>0 - if string1 is greater than string2</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>PHP Version:</th>
+                        <td>4+</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="example">
+                <h2>Example</h2>
+                <p>Compare two strings (case-sensitive = Hello and hELLo will not output the same):</p>
+                <div class="examplebox" id="strncmpexamplebox">
+                    <p><span>
+                            < </span>?php</p>
+                    <p> echo strncmp("Hello","Hello",6); // 0</p>
+                    <p>echo "<<span>br</span>>" ;</p>
+                    <p>echo strncmp("Hello","hELLo",6); // -32</p>
+                    <p>?></p>
+                </div><br>
+                <div class="copy">
+                    <button  
+                        onclick="copyToClipboard('#strncmpexamplebox')  ,myFunction()">Copy</button><br>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- =======================================Strpos========================================== -->
+        <!-- =======================================Strpos========================================== -->
+        <!-- =======================================Strpos========================================== -->
+
+        <div class="page" id="Strpos" style="display:none">
+            <h1>PHP strpos() Function</h1>
+            <div class="defination">
+                <h2>Definition and Usage</h2><br>
+                <p>The strpos() function finds the position of the first occurrence of a string inside another string.
+                </p>
+                <p><b>Note:</b> The strpos() function is case-sensitive.</p>
+                <p><b>Note:</b> This function is binary-safe.</p>
+                <ul>Related functions:<br>
+                    <li>strrpos() - Finds the position of the last occurrence of a string inside another string
+                        (case-sensitive)
+                    </li>
+                    <li>stripos() - Finds the position of the first occurrence of a string inside another string
+                        (case-insensitive)
+                    </li>
+                    <li>strripos() - Finds the position of the last occurrence of a string inside another string
+                        (case-insensitive)
+                    </li>
+                </ul>
+                <hr>
+            </div>
+            <div class="syntax">
+                <h2>Syntax</h2>
+                <div class="syntaxbox">
+                    <p>strpos(<i>string,find,start)</i></p>
+                </div>
+            </div><br>
+            <div class="parameter">
+                <h2>Pramater Values</h2>
+                <table class="table   table-responsive" style="border:1px solid black">
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Desciption</th>
+                    </tr>
+                    <tr>
+                        <td>string</td>
+                        <td>Required. Specifies the string to search</td>
+                    </tr>
+                    <tr>
+                        <td>find</td>
+                        <td> Required. Specifies the string to find</td>
+                    </tr>
+                    <tr>
+                        <td>length</td>
+                        <td>Optional. Specifies where to begin the search. If start is a negative number, it counts from
+                            the end of the string.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="technicaldetail">
+                <h2>Technical Details</h2>
+                <table class="table    table-responsive" style="border:1px solid black">
+                    <tr>
+                        <th>Return Value:</th>
+                        <td>
+                            <p>Returns the position of the first occurrence of a string inside another string, or FALSE
+                                if the string is not found. Note: String positions start at 0, and not 1.
+                            </p>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>PHP Version:</th>
+                        <td>4+</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="example">
+                <h2>Example</h2>
+                <p>Compare two strings (case-sensitive = Hello and hELLo will not output the same):</p>
+                <div class="examplebox" id="strposexamplebox">
+                    <p><span>
+                            < </span>?php</p>
+                    <p>echo strpos("Hello world!","l","5") // Result: 9; </p>
+                    <p>?></p>
+                </div><br>
+                <div class="copy">
+                    <button   onclick="copyToClipboard('#strposexamplebox') ,myFunction()">Copy</button><br>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- =======================================Strrev========================================== -->
+        <!-- =======================================Strrev========================================== -->
+        <!-- =======================================Strrev========================================== -->
+
+        <div class="page" id="Strrev" style="display:none">
+            <h1>PHP strrev() Function</h1>
+            <div class="defination">
+                <h2>Definition and Usage</h2><br>
+                <p>The strrev() function reverses a string.
+                </p>
+
+                <hr>
+            </div>
+            <div class="syntax">
+                <h2>Syntax</h2>
+                <div class="syntaxbox">
+                    <p>strrev(<i>string</i>)</p>
+                </div>
+            </div><br>
+            <div class="parameter">
+                <h2>Pramater Values</h2>
+                <table class="table   table-responsive" style="border:1px solid black">
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Desciption</th>
+                    </tr>
+                    <tr>
+                        <td>string</td>
+                        <td>Required. Specifies the string to reverse</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="technicaldetail">
+                <h2>Technical Details</h2>
+                <table class="table    table-responsive" style="border:1px solid black">
+                    <tr>
+                        <th>Return Value:</th>
+                        <td>
+                            <p>Returns the reversed string
+                            </p>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>PHP Version:</th>
+                        <td>4+</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="example">
+                <h2>Example</h2>
+                <p>Compare two strings (case-sensitive = Hello and hELLo will not output the same):</p>
+                <div class="examplebox" id="strrevexamplebox">
+                    <p><span>
+                            < </span>?php</p>
+                    <p>echo strrev("Hello world!") // Result: !dlrow olleH; </p>
+                    <p>?></p>
+                </div><br>
+                <div class="copy">
+                    <button   onclick="copyToClipboard('#strrevexamplebox') ,myFunction()">Copy</button><br>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- =======================================Strstr========================================== -->
+        <!-- =======================================Strstr========================================== -->
+        <!-- =======================================Strstr========================================== -->
+
+        <div class="page" id="Strstr" style="display:none">
+            <h1>PHP strstr() Function</h1>
+            <div class="defination">
+                <h2>Definition and Usage</h2><br>
+                <p>The strstr() function searches for the first occurrence of a string inside another string.
+                </p>
+                <p><b>Note:</b> This function is binary-safe.</p>
+                <p><b>Note:</b> This function is case-sensitive. For a case-insensitive search, use stristr()
+                    function.p>
+                    <hr>
+            </div>
+            <div class="syntax">
+                <h2>Syntax</h2>
+                <div class="syntaxbox">
+                    <p>strstr(<i>string,search,before_search)</i>
+                    </p>
+                </div>
+            </div><br>
+            <div class="parameter">
+                <h2>Pramater Values</h2>
+                <table class="table   table-responsive" style="border:1px solid black">
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Desciption</th>
+                    </tr>
+                    <tr>
+                        <td>string</td>
+                        <td>Required. Specifies the string to search</td>
+                    </tr>
+                    <tr>
+                        <td>Search</td>
+                        <td>Required. Specifies the string to search for. If this parameter is a number, it will search
+                            for the character matching the ASCII value of the number
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>before_search</td>
+                        <td>Optional. A boolean value whose default is "false". If set to "true", it returns the part of
+                            the string before the first occurrence of the search parameter.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="technicaldetail">
+                <h2>Technical Details</h2>
+                <table class="table    table-responsive" style="border:1px solid black">
+                    <tr>
+                        <th>Return Value:</th>
+                        <td>
+                            <p>Returns the rest of the string (from the matching point), or FALSE, if the string to
+                                search for is not found.
+                            </p>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>PHP Version:</th>
+                        <td>4+</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="example">
+                <h2>Example</h2>
+                <p>Compare two strings (case-sensitive = Hello and hELLo will not output the same):</p>
+                <div class="examplebox" id="strstrexamplebox">
+                    <p><span>
+                            < </span>?php</p>
+                    <p>echo strstr("Hello world!",111) // Result: o world; </p>
+                    <p>?></p>
+                </div><br>
+                <div class="copy">
+                    <button   onclick="copyToClipboard('#strstrexamplebox') ,myFunction()">Copy</button><br>
+                </div>
+            </div>
+            <br>
+            <div class="example">
+                <h2>Example</h2>
+                <p>Compare two strings (case-sensitive = Hello and hELLo will not output the same):</p>
+                <div class="examplebox" id="strstr2examplebox">
+                    <p><span>
+                            < </span>?php</p>
+                    <p>echo strstr("Hello world!","world",true) // Result: Hello; </p>
+                    <p>?></p>
+                </div><br>
+                <div class="copy">
+                    <button   onclick="copyToClipboard('#strstr2examplebox') ,myFunction()">Copy</button><br>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- =======================================Strtolower========================================== -->
+        <!-- =======================================Strtolower========================================== -->
+        <!-- =======================================Strtolower========================================== -->
+
+        <div class="page" id="Strtolower" style="display:none">
+            <h1>PHP strtolower() Function</h1>
+            <div class="defination">
+                <h2>Definition and Usage</h2><br>
+                <p>The strtolower() function converts a string to lowercase.
+                </p>
+                <p><b>Note:</b> This function is binary-safe.</p>
+                <ul>
+                    Related functions:<br>
+                    <li>strtoupper() - converts a string to uppercase
+                    </li>
+                    <li>lcfirst() - converts the first character of a string to lowercase
+                    </li>
+                    <li>ucfirst() - converts the first character of a string to uppercase
+                    </li>
+                    <li>ucwords() - converts the first character of each word in a string to uppercase
+                    </li>
+                </ul>
+
+                <hr>
+            </div>
+            <div class="syntax">
+                <h2>Syntax</h2>
+                <div class="syntaxbox">
+                    <p>strtolower(<i>string</i>)
+                    </p>
+                </div>
+            </div><br>
+            <div class="parameter">
+                <h2>Pramater Values</h2>
+                <table class="table   table-responsive" style="border:1px solid black">
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Desciption</th>
+                    </tr>
+                    <tr>
+                        <td>string</td>
+                        <td>Required. Specifies the string to convert</td>
+                    </tr>
+
+                </table>
+            </div>
+
+            <div class="technicaldetail">
+                <h2>Technical Details</h2>
+                <table class="table    table-responsive" style="border:1px solid black">
+                    <tr>
+                        <th>Return Value:</th>
+                        <td>
+                            <p>Returned the lowercased string
+                            </p>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>PHP Version:</th>
+                        <td>4+</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="example">
+                <h2>Example</h2>
+                <p>Compare two strings (case-sensitive = Hello and hELLo will not output the same):</p>
+                <div class="examplebox" id="strloexamplebox">
+                    <p><span>
+                            < </span>?php</p>
+                    <p>echo strtolower("Hello WORLd!") // Result: hello world!; </p>
+                    <p>?></p>
+                </div><br>
+                <div class="copy">
+                    <button   onclick="copyToClipboard('#strloexamplebox') ,myFunction()">Copy</button><br>
+                </div>
+            </div>
+            <br>
+
+        </div>
+
+
+
+
+        <!-- =======================================Strtoupperr========================================== -->
+        <!-- =======================================Strtoupper========================================== -->
+        <!-- =======================================Strtoupper========================================== -->
+
+        <div class="page" id="Strtoupper" style="display:none">
+            <h1>PHP strtoupper() Function</h1>
+            <div class="defination">
+                <h2>Definition and Usage</h2><br>
+                <p>The strtoupper() function converts a string to lowercase.
+                </p>
+                <p><b>Note:</b> This function is binary-safe.</p>
+                <ul>
+                    Related functions:<br>
+                    <li>strtolower() - converts a string to lowercase
+                    </li>
+                    <li>lcfirst() - converts the first character of a string to lowercase
+                    </li>
+                    <li>ucfirst() - converts the first character of a string to uppercase
+                    </li>
+                    <li>ucwords() - converts the first character of each word in a string to uppercase
+                    </li>
+                </ul>
+
+                <hr>
+            </div>
+            <div class="syntax">
+                <h2>Syntax</h2>
+                <div class="syntaxbox">
+                    <p>strtoupper(<i>string</i>)
+                    </p>
+                </div>
+            </div><br>
+            <div class="parameter">
+                <h2>Pramater Values</h2>
+                <table class="table   table-responsive" style="border:1px solid black">
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Desciption</th>
+                    </tr>
+                    <tr>
+                        <td>string</td>
+                        <td>Required. Specifies the string to convert</td>
+                    </tr>
+
+                </table>
+            </div>
+
+            <div class="technicaldetail">
+                <h2>Technical Details</h2>
+                <table class="table    table-responsive" style="border:1px solid black">
+                    <tr>
+                        <th>Return Value:</th>
+                        <td>
+                            <p>Returned the Upperedcased string
+                            </p>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>PHP Version:</th>
+                        <td>4+</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="example">
+                <h2>Example</h2>
+                <p>Compare two strings (case-sensitive = Hello and hELLo will not output the same):</p>
+                <div class="examplebox" id="strupperexamplebox">
+                    <p><span>
+                            < </span>?php</p>
+                    <p>echo strtoupper("Hello WORLd!") // Result: HELLO WORLD!; </p>
+                    <p>?></p>
+                </div><br>
+                <div class="copy">
+                    <button  onclick="copyToClipboard('#strupperexamplebox') ,myFunction()">Copy</button><br>
+                </div>
+            </div>
+            <br>
+
+        </div>
+
+        <!-- =======================================ucfirst========================================== -->
+        <!-- =======================================ucfirst========================================== -->
+        <!-- =======================================ucfirst========================================== -->
+
+
+        <div class="page" id="Ucfirst" style="display:none">
+            <h1>PHP Ucfirst() Function</h1>
+            <div class="defination">
+                <h2>Definition and Usage</h2><br>
+                <p>The Ucfirst() function converts first character of to uppercase.
+                </p>
+                <ul>
+                    Related functions:<br>
+                    <li>strtolower() - converts a string to lowercase
+                    </li>
+                    <li>lcfirst() - converts the first character of a string to lowercase
+                    </li>
+                    <li>ucfirst() - converts the first character of a string to uppercase
+                    </li>
+                    <li>strupper() - converts the string to uppercase
+                    </li>
+                </ul>
+
+                <hr>
+            </div>
+            <div class="syntax">
+                <h2>Syntax</h2>
+                <div class="syntaxbox">
+                    <p>ucfirst(<i>string</i>)
+                    </p>
+                </div>
+            </div><br>
+            <div class="parameter">
+                <h2>Pramater Values</h2>
+                <table class="table   table-responsive" style="border:1px solid black">
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Desciption</th>
+                    </tr>
+                    <tr>
+                        <td>string</td>
+                        <td>Required. Specifies the string to convert</td>
+                    </tr>
+
+                </table>
+            </div>
+
+            <div class="technicaldetail">
+                <h2>Technical Details</h2>
+                <table class="table    table-responsive" style="border:1px solid black">
+                    <tr>
+                        <th>Return Value:</th>
+                        <td>
+                            <p>Returnes the converted string
+                            </p>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>PHP Version:</th>
+                        <td>4+</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="example">
+                <h2>Example</h2>
+                <p>Compare two strings (case-sensitive = Hello and hELLo will not output the same):</p>
+                <div class="examplebox" id="ucfirstexamplebox">
+                    <p><span>
+                            < </span>?php</p>
+                    <p>echoo ucfirst("hello world!") // Result: Hello world!; </p>
+                    <p>?></p>
+                </div><br>
+                <div class="copy">
+                    <button   onclick="copyToClipboard('#ucfirstexamplebox') ,myFunction()">Copy</button><br>
+                </div>
+            </div>
+            <br>
+
+        </div>
+
+
+
+
+
+
+        <!-- =======================================Trim========================================== -->
+        <!-- =======================================Trim========================================== -->
+        <!-- =======================================Trim========================================== -->
+
+        <div class="page" id="Trim" style="display:none">
+            <h1>PHP Trim() Function</h1>
+            <div class="defination">
+                <h2>Definition and Usage</h2><br>
+                <p>The trim() function removes whitespace and other predefined characters from both sides of a string.
+                </p>
+
+                <ul>
+                    Related functions:<br>
+                    <li>ltrim() - Removes whitespace or other predefined characters from the left side of a string
+                    </li>
+                    <li>rtrim() - Removes whitespace or other predefined characters from the right side of a string</li>
+                </ul>
+
+                <hr>
+            </div>
+            <div class="syntax">
+                <h2>Syntax</h2>
+                <div class="syntaxbox">
+                    <p>trim(<i>string ,charList</i>)
+                    </p>
+                </div>
+            </div><br>
+            <div class="parameter">
+                <h2>Pramater Values</h2>
+                <table class="table   table-responsive" style="border:1px solid black">
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Desciption</th>
+                    </tr>
+                    <tr>
+                        <td>string</td>
+                        <td>Required. Specifies the string to check</td>
+                    </tr>
+                    <tr>
+                        <td>charlist</td>
+                        <td>Optional. Specifies which characters to remove from the string. If omitted, all of the
+                            following characters are removed:
+                            <ul>
+                                <li>\0" - NULL</li>
+                                <li>"\t" - tab
+                                </li>
+                                <li>"\n" - new line
+                                </li>
+                                <li>"\x0B" - vertical tab
+                                </li>
+                                <li>"\r" - carriage return
+                                </li>
+                                <li>" " - ordinary white space
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+
+            <div class="technicaldetail">
+                <h2>Technical Details</h2>
+                <table class="table    table-responsive" style="border:1px solid black">
+                    <tr>
+                        <th>Return Value:</th>
+                        <td>
+                            <p>Returned the modified string
+                            </p>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>PHP Version:</th>
+                        <td>4+</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="example">
+                <h2>Example</h2>
+                <p>Compare two strings (case-sensitive = Hello and hELLo will not output the same):</p>
+                <div class="examplebox" id="trimexamplebox">
+                    <p><span>
+                            < </span>?php</p>
+                    <p>$str = " Hello World! ";</p>
+                    <p>echo "With trim: " . trim($str) // Result: Hello World!;
+                    </p>
+                    <p>?></p>
+                </div><br>
+                <div class="copy">
+                    <button onclick="copyToClipboard('#trimexamplebox') ,myFunction()">Copy</button><br>
+                </div>
+            </div>
+            <br>
+
+        </div>
+
+
+
+
+    </section>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="left-col">
+                <img src="ST LOGO.png" alt="" class="footerlogo">
+
+
+            </div>
+
+            <div class="right-col">
+                <center>
+                    <div class="social-media">
+                        <a href="https://www.facebook.com/people/Shreyansh-Thoriya/100008721789714"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/_shreyansh027_/"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <p class="rights-text">© 2020 Created By ST WebDesign All Rights Reserved.</p>
+                </center>
+            </div>
+        </div>
+    </footer>
+
+    <!-- string function end -->
+    <script>
+        function myFunction() {
+            alert("message?: Example are copied")
+        }
+        $(".sidea1").click(function (e) {
+            e.preventDefault();
+            $(".page").hide();
+            var toShow = $(this).attr('href');
+            $(toShow).show();
+        });
+
+        $(document).ready(function () {
+
+            // var mq = window.matchMedia("(max-width: 1000px)");
+            // if (mq.matches) {
+            //     // window width is at less than 570px
+            //     if ($("#sideul1").show = 1) {
+            //         $("#sideul1").hide();
+            //     }
+            //     if ($("#sideli1").show = 1) {
+            //         $("#sideli1").hide();
+            //     } if ($(".sidea1").show = 1) {
+            //         $(".sidea1").hide();
+            //     }
+            // }
+            // else {
+            //     $("i").click(function () {
+            //         $("#sideul1").toggle(500);
+            //         $("#sideli1").toggle(500);
+            //         $(".sidea1").toggle(500);
+            //     });
+            //     // window width is greater than 570px
+            // }
+
+            if ($(window).width() < 1001) {
+                if ($("#sideul1").show = 1) {
+                    $("#sideul1").hide();
+                }
+                if ($("#sideli1").show = 1) {
+                    $("#sideli1").hide();
+                } if ($(".sidea1").show = 1) {
+                    $(".sidea1").hide();
+                }
+                $("i").click(function () {
+                    $("#sideul1").toggle(500);
+                    $("#sideli1").toggle(500);
+                    $(".sidea1").toggle(500);
+                });
+
+                $(".sidea1").click(function () {
+                    $("#sideul1").hide(500);
+                    $("#sideli1").hide(500);
+                    $(".sidea1").hide(500);
+                });
+            }
+            else {
+                $("i").click(function () {
+                    $("#sideul1").toggle(500);
+                    $("#sideli1").toggle(500);
+                    $(".sidea1").toggle(500);
+                });
+            }
+
+        });
+
+        function copyToClipboard(element) {
+            var $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val($(element).text()).select();
+            document.execCommand("copy");
+            $temp.remove();
+        }
+
+    </script>
+</body>
+
+</html>
